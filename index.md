@@ -9,17 +9,13 @@
 
                         	console.log("Received the onEmbeddedMessagingConversationClosed event…");
 
-                        	// Do something...
+                        	const footer = document.querySelector("embeddedmessaging-input-footer");
+  if (footer) {
+    footer.style.display = none;
+  }
 
                 	});
-			window.addEventListener( "onEmbeddedMessagingConversationClosed", () => {	
-					console.log( "Inside Conversation End" );
-					embeddedservice_bootstrap.userVerificationAPI.clearSession( true ).then( () => {
-						console.log( 'START::Remove Components' );
-						embeddedservice_bootstrap.utilAPI.removeAllComponents();
-						console.log( 'END::Remove Components' );						
-					} );				
-				} );
+
 
 			embeddedservice_bootstrap.init(
 				'00D2o000000i2oh',
