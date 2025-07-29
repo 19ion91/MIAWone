@@ -1,4 +1,5 @@
 <html> 
+	<head><link rel="icon" href="data:,"></head>
   <body>
     <script type='text/javascript'>
 	function initEmbeddedMessaging() {
