@@ -15,6 +15,15 @@
     footer.style.display = "none";
   }
 
+  const footer1 = document.querySelector(".footerItemsContainer");
+if (footer1) {
+  console.log("footerItemsContainer found");
+  footer1.style.display = "none";
+} else {
+  console.log("footerItemsContainer NOT found");
+}
+
+
                 	});
 
 
