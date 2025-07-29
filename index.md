@@ -67,8 +67,8 @@ if (footer2) {
   }
 
   // Step 4: Find and hide the target element
-  const footer = conversationShadow.querySelector(".footerItemsContainer");
-  if (footer) {
+  const footer5 = conversationShadow.querySelector(".footerItemsContainer");
+  if (footer5) {
     footer.style.display = "none";
     console.log("footerItemsContainer hidden");
   } else {
