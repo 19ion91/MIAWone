@@ -5,19 +5,21 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'it'; // For example, enter 'en' or 'en-US'
-			window.addEventListener( "onEmbeddedMessagingConversationClosed", () => {
+			window.addEventListener("onEmbeddedMessagingConversationClosed", e => {
 
-	console.log( "Inside Conversation End" );
+                        	console.log("Received the onEmbeddedMessagingConversationClosed event…");
 
-	embeddedservice_bootstrap.userVerificationAPI.clearSession( true ).then( () => {
+                        	// Do something...
 
-		console.log( 'START::Remove Components' );
-		embeddedservice_bootstrap.utilAPI.removeAllComponents();
-		console.log( 'END::Remove Components' );
-		
-	} );
-
-} );
+                	});
+			window.addEventListener( "onEmbeddedMessagingConversationClosed", () => {	
+					console.log( "Inside Conversation End" );
+					embeddedservice_bootstrap.userVerificationAPI.clearSession( true ).then( () => {
+						console.log( 'START::Remove Components' );
+						embeddedservice_bootstrap.utilAPI.removeAllComponents();
+						console.log( 'END::Remove Components' );						
+					} );				
+				} );
 
 			embeddedservice_bootstrap.init(
 				'00D2o000000i2oh',
