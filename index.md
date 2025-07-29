@@ -34,6 +34,48 @@ if (footer2) {
 }
 
 
+
+
+
+
+// Step 1: Get the embedded messaging root element
+  const embeddedMessaging = document.querySelector("embedded-messaging");
+
+  if (!embeddedMessaging) {
+    console.log("embedded-messaging not found");
+    return;
+  }
+
+  // Step 2: Access shadow root
+  const shadowRoot = embeddedMessaging.shadowRoot;
+  if (!shadowRoot) {
+    console.log("No shadowRoot found on embedded-messaging");
+    return;
+  }
+
+  // Step 3: Look deeper if needed – sometimes it's nested further
+  const conversationRoot = shadowRoot.querySelector("embeddedmessaging-conversation");
+  if (!conversationRoot) {
+    console.log("embeddedmessaging-conversation not found");
+    return;
+  }
+
+  const conversationShadow = conversationRoot.shadowRoot;
+  if (!conversationShadow) {
+    console.log("No shadowRoot found on embeddedmessaging-conversation");
+    return;
+  }
+
+  // Step 4: Find and hide the target element
+  const footer = conversationShadow.querySelector(".footerItemsContainer");
+  if (footer) {
+    footer.style.display = "none";
+    console.log("footerItemsContainer hidden");
+  } else {
+    console.log("footerItemsContainer not found");
+  }
+
+
                 	});
 
 
