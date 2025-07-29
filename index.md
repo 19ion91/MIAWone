@@ -13,14 +13,16 @@
   if (footer) {
   console.log("footer found");
     footer.style.display = "none";
-  }
+  } else {
+  console.log("footerItemsContainer1 NOT found");
+}
 
   const footer1 = document.querySelector(".footerItemsContainer");
 if (footer1) {
   console.log("footerItemsContainer found");
   footer1.style.display = "none";
 } else {
-  console.log("footerItemsContainer NOT found");
+  console.log("footerItemsContainer2 NOT found");
 }
 
 const footer2 = document.querySelector(".embeddedMessagingInputTextAreaWrapper");
@@ -28,7 +30,7 @@ if (footer2) {
   console.log("embeddedMessagingInputTextAreaWrapper found");
   footer2.style.display = "none";
 } else {
-  console.log("footerItemsContainer NOT found");
+  console.log("footerItemsContainer3 NOT found");
 }
 
 
