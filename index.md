@@ -23,6 +23,14 @@ if (footer1) {
   console.log("footerItemsContainer NOT found");
 }
 
+const footer2 = document.querySelector(".embeddedMessagingInputTextAreaWrapper");
+if (footer2) {
+  console.log("embeddedMessagingInputTextAreaWrapper found");
+  footer2.style.display = "none";
+} else {
+  console.log("footerItemsContainer NOT found");
+}
+
 
                 	});
 
