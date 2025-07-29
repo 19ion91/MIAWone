@@ -7,8 +7,8 @@
 
 			embeddedservice_bootstrap.init(
 				'00D2o000000i2oh',
-				'toGitHub',
-				'https://d2o000000i2oheaa-dev-ed.develop.my.site.com/ESWtoGitHub1753792271545',
+				'miaoone',
+				'https://d2o000000i2oheaa-dev-ed.develop.my.site.com/ESWmiaoone1753792726519',
 				{
 					scrt2URL: 'https://d2o000000i2oheaa-dev-ed.develop.my.salesforce-scrt.com'
 				}
@@ -18,7 +18,8 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://d2o000000i2oheaa-dev-ed.develop.my.site.com/ESWtoGitHub1753792271545/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://d2o000000i2oheaa-dev-ed.develop.my.site.com/ESWmiaoone1753792726519/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
   </body>
 </html>
