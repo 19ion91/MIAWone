@@ -4,6 +4,9 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'it'; // For example, enter 'en' or 'en-US'
+			window.addEventListener("onEmbeddedMessagingConversationClosed", () => {
+			    console.log("Conversation was closed!");
+			});
 
 			embeddedservice_bootstrap.init(
 				'00D2o000000i2oh',
