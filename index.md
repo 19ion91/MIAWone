@@ -11,7 +11,8 @@
 
                         	const footer = document.querySelector("embeddedmessaging-input-footer");
   if (footer) {
-    footer.style.display = none;
+  console.log("footer found");
+    footer.style.display = "none";
   }
 
                 	});
